@@ -1,0 +1,31 @@
+@import '@economist/component-typography';
+@import '@economist/component-palette';
+@import '@economist/component-link-button';
+@import './arrows.css';
+
+.accordion {
+  font-size: 1rem;
+}
+
+/* stylelint-disable selector-no-type */
+
+.accordion.list,
+.accordion.list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accordion.list a {
+  text-decoration: none;
+}
+
+/* stylelint-enable selector-no-type */
+
+.accordion-expander--not-visible > .content {
+  display: none;
+}
+
+.accordion-expander--visible > .content {
+  display: block;
+}

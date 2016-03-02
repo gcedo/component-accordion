@@ -6,9 +6,9 @@
 }
 
 .accordion__link {
+  display: block;
   padding: var(--accordion__link-padding, 0.8em);
   color: var(--accordion__link-color, var(--color-beijing));
-  display: block;
 }
 
 .accordion > .list__item:not(:last-child) {
@@ -25,10 +25,12 @@
 }
 
 .accordion > .list__item .list__item {
+  font-size: var(--text-size-step--1);
   font-weight: normal;
   text-indent: 1em;
-  font-size: var(--text-size-step--1);
 }
+
+/* stylelint-disable selector-no-type */
 
 .accordion .list__item svg {
   float: left;
@@ -39,3 +41,5 @@
 .accordion .list__item use {
   fill: var(--accordion__icons-fill, var(--color-chicago));
 }
+
+/* stylelint-enable selector-no-type */
