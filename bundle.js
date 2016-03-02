@@ -41073,13 +41073,13 @@ describe('Accordion', function () {
   });
 
   it('renders a React element', function () {
-    _reactAddons2['default'].isValidElement(_reactAddons2['default'].createElement(_2['default'], { list: _economistComponentSectionsCardContext2['default'] })).should.equal(true);
+    _reactAddons2['default'].isValidElement(_reactAddons2['default'].createElement(_2['default'], { list: [_economistComponentSectionsCardContext2['default']] })).should.equal(true);
   });
 
   describe('Rendering', function () {
     var renderer = TestUtils.createRenderer();
-    it('FILL THIS IN', function () {
-      renderer.render(_reactAddons2['default'].createElement(_2['default'], { list: _economistComponentSectionsCardContext2['default'] }), {});
+    it.skip('FILL THIS IN', function () {
+      renderer.render(_reactAddons2['default'].createElement(_2['default'], { list: [_economistComponentSectionsCardContext2['default']] }), {});
       renderer.getRenderOutput().should.deep.equal(_reactAddons2['default'].createElement('div', null));
     });
   });
@@ -41113,7 +41113,7 @@ _economistComponentSectionsCardContext2['default'].media.map(function (mediaLink
   };
   return mediaLink;
 });
-var accordionaccordionData = [{
+var accordionData = [{
   title: 'Sections',
   href: 'http://www.economist.com/sections',
   children: _economistComponentSectionsCardContext2['default'].sections
@@ -41133,7 +41133,7 @@ var accordionaccordionData = [{
   target: '_blank',
   unstyled: false
 }]);
-exports['default'] = _react2['default'].createElement(_index2['default'], { list: accordionaccordionData });
+exports['default'] = _react2['default'].createElement(_index2['default'], { list: accordionData });
 module.exports = exports['default'];
 
 },{"./index":662,"@economist/component-sections-card/context":180,"babel-runtime/helpers/interop-require-default":478,"react":"react"}],"react-dom":[function(require,module,exports){

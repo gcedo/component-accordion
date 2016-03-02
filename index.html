@@ -217,9 +217,9 @@ pre[class*&#x3D;&quot;language-&quot;] {
       <h2 id="example" class="component-panel-heading"><a href="#example">Example</a></h2>
       <pre><code>    <span class="token keyword" >import</span> Accordion <span class="token keyword" >from</span> <span class="token string" >'./index'</span><span class="token punctuation" >;</span>
     <span class="token keyword" >import</span> React <span class="token keyword" >from</span> <span class="token string" >'react'</span><span class="token punctuation" >;</span>
-    <span class="token keyword" >import</span> accordionData <span class="token keyword" >from</span> <span class="token string" >'@economist/component-sections-card/context'</span><span class="token punctuation" >;</span>
+    <span class="token keyword" >import</span> cardData <span class="token keyword" >from</span> <span class="token string" >'@economist/component-sections-card/context'</span><span class="token punctuation" >;</span>
     <span class="token comment" spellcheck="true">// Force media links to use icon as background.</span>
-    accordionData<span class="token punctuation" >.</span>media<span class="token punctuation" >.</span><span class="token function" >map</span><span class="token punctuation" >(</span><span class="token punctuation" >(</span>mediaLink<span class="token punctuation" >)</span> <span class="token operator" >=</span><span class="token operator" >></span> <span class="token punctuation" >{</span>
+    cardData<span class="token punctuation" >.</span>media<span class="token punctuation" >.</span><span class="token function" >map</span><span class="token punctuation" >(</span><span class="token punctuation" >(</span>mediaLink<span class="token punctuation" >)</span> <span class="token operator" >=</span><span class="token operator" >></span> <span class="token punctuation" >{</span>
       mediaLink<span class="token punctuation" >.</span>icon <span class="token operator" >=</span> <span class="token punctuation" >{</span>
         useBackground<span class="token punctuation" >:</span> <span class="token boolean" >true</span><span class="token punctuation" >,</span>
         color<span class="token punctuation" >:</span> <span class="token string" >'chicago'</span><span class="token punctuation" >,</span>
@@ -227,18 +227,18 @@ pre[class*&#x3D;&quot;language-&quot;] {
       <span class="token punctuation" >}</span><span class="token punctuation" >;</span>
       <span class="token keyword" >return</span> mediaLink<span class="token punctuation" >;</span>
     <span class="token punctuation" >}</span><span class="token punctuation" >)</span><span class="token punctuation" >;</span>
-    <span class="token keyword" >const</span> accordionaccordionData <span class="token operator" >=</span> <span class="token punctuation" >[</span>
+    <span class="token keyword" >const</span> accordionData <span class="token operator" >=</span> <span class="token punctuation" >[</span>
       <span class="token punctuation" >{</span>
         title<span class="token punctuation" >:</span> <span class="token string" >'Sections'</span><span class="token punctuation" >,</span>
         href<span class="token punctuation" >:</span> <span class="token string" >'http://www.economist.com/sections'</span><span class="token punctuation" >,</span>
-        children<span class="token punctuation" >:</span> accordionData<span class="token punctuation" >.</span>sections<span class="token punctuation" >,</span>
+        children<span class="token punctuation" >:</span> cardData<span class="token punctuation" >.</span>sections<span class="token punctuation" >,</span>
       <span class="token punctuation" >}</span><span class="token punctuation" >,</span>
       <span class="token punctuation" >{</span>
         title<span class="token punctuation" >:</span> <span class="token string" >'Blogs'</span><span class="token punctuation" >,</span>
         href<span class="token punctuation" >:</span> <span class="token string" >'http://www.economist.com/blogs'</span><span class="token punctuation" >,</span>
-        children<span class="token punctuation" >:</span> accordionData<span class="token punctuation" >.</span>blogs<span class="token punctuation" >,</span>
+        children<span class="token punctuation" >:</span> cardData<span class="token punctuation" >.</span>blogs<span class="token punctuation" >,</span>
       <span class="token punctuation" >}</span><span class="token punctuation" >,</span>
-      <span class="token punctuation" >.</span><span class="token punctuation" >.</span><span class="token punctuation" >.</span>accordionData<span class="token punctuation" >.</span>media<span class="token punctuation" >,</span>
+      <span class="token punctuation" >.</span><span class="token punctuation" >.</span><span class="token punctuation" >.</span>cardData<span class="token punctuation" >.</span>media<span class="token punctuation" >,</span>
       <span class="token punctuation" >{</span>
         title<span class="token punctuation" >:</span> <span class="token string" >'Print Edition'</span><span class="token punctuation" >,</span>
         href<span class="token punctuation" >:</span> <span class="token string" >'http://www.economist.com/printedition/'</span><span class="token punctuation" >,</span>
@@ -255,7 +255,7 @@ pre[class*&#x3D;&quot;language-&quot;] {
       <span class="token punctuation" >}</span><span class="token punctuation" >,</span>
     <span class="token punctuation" >]</span><span class="token punctuation" >;</span>
     <span class="token keyword" >export</span> <span class="token keyword" >default</span> <span class="token punctuation" >(</span>
-      <span class="token operator" >&lt;</span>Accordion list<span class="token operator" >=</span><span class="token punctuation" >{</span>accordionaccordionData<span class="token punctuation" >}</span> <span class="token operator" >/</span><span class="token operator" >></span>
+      <span class="token operator" >&lt;</span>Accordion list<span class="token operator" >=</span><span class="token punctuation" >{</span>accordionData<span class="token punctuation" >}</span> <span class="token operator" >/</span><span class="token operator" >></span>
     <span class="token punctuation" >)</span><span class="token punctuation" >;</span>
     
     </pre></code>
