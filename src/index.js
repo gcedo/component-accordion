@@ -21,6 +21,10 @@ export default class Accordion extends React.Component {
         href: contentItem.href,
         key: `${ i }`,
       };
+      if (contentItem.hr) {
+        return <hr key={commonProps.key} className="accordion__hr" />;
+      }
+
       // Spread icon props.
       if (contentItem.icon || (contentItem.children && contentItem.children.length > 0)) {
         commonProps.icon = {
