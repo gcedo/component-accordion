@@ -166,7 +166,7 @@
     "sinon": "^1.17.1",
     "stylelint": "^5.1.0",
     "stylelint-config-strict": "^4.0.0",
-    "validate-commit-msg": "^2.4.0",
+    "validate-commit-msg": "^2.4.1",
     "watchify": "^3.7.0"
   },
   "peerDependencies": {
