@@ -1,9 +1,8 @@
 import Balloon from '@economist/component-balloon';
 import Button from '@economist/component-link-button';
-import List from '@economist/component-list';
 import React from 'react';
 
-function renderListContent(contentList, level) {
+function renderListContent(contentList, level = 0) {
   level++;
 
   return contentList.map((contentItem, i) => {
@@ -58,30 +57,31 @@ function renderListContent(contentList, level) {
     if (contentItem.children && contentItem.children.length > 0) {
       listcontentItem = (
         <Balloon
+          unstyled
           prefix="accordion-expander"
           className={`accordion__level${ level }`}
-          unstyled
           key={`level${ level }-${ i }`}
           trigger={listcontentItem}
         >
-        <List>
+        <ul className="list">
           {renderListContent(contentItem.children, level)}
-        </List>
+        </ul>
       </Balloon>
     );
     }
-    return listcontentItem;
+    return (
+      <li className="list__item" key={`level${ level }-${ i }`}>
+        {listcontentItem}
+      </li>
+    );
   });
 }
 
-
 export default function Accordion({ list }) {
-  const contentList = list;
-  const level = 0;
   return (
-    <List className="accordion">
-      {renderListContent(contentList, level)}
-    </List>
+    <ul className="list accordion">
+      {renderListContent(list)}
+    </ul>
   );
 }
 
