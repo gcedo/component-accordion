@@ -1,8 +1,8 @@
 import 'babel-polyfill';
-import Accordion from '..';
-import React from 'react/addons';
+import Accordion from '../src';
+import React from 'react';
 import TestUtils from 'react-addons-test-utils';
-import accordionData from '@economist/component-sections-card/context';
+import accordionData from '@economist/component-sections-card/lib/context';
 import chai from 'chai';
 chai.should();
 describe('Accordion', () => {
