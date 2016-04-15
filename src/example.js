@@ -1,6 +1,6 @@
 import Accordion from './index';
 import React from 'react';
-import cardData from '@economist/component-sections-card/context';
+import cardData from '@economist/component-sections-card/lib/context';
 // Force media links to use icon as background.
 cardData.media.map((mediaLink) => {
   mediaLink.icon = {
